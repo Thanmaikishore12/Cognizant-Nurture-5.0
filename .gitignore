@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/DeepSkilling/Module-03-AdvancedSQL/.vs/slnx.sqlite
+/DeepSkilling/Module-03-AdvancedSQL/.vs/Module-03-AdvancedSQL.slnx/FileContentIndex
