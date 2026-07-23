@@ -1,0 +1,24 @@
+<div appHighlight="lightyellow">
+
+  <h3>{{ course.name }}</h3>
+
+  <p>Code: {{ course.code }}</p>
+
+  <p>Credits: {{ course.credits | creditLabel }}</p>
+
+  <p>Status: {{ course.gradeStatus }}</p>
+
+  <button
+    (click)="toggleEnrollment()">
+
+    {{
+      enrollmentService.isEnrolled(course.id)
+      ? 'Unenroll'
+      : 'Enroll'
+    }}
+
+  </button>
+
+</div>
+
+<hr>
