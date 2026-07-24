@@ -1,0 +1,23 @@
+<h2>{{ course?.name }}</h2>
+
+<p><strong>Code:</strong> {{ course?.code }}</p>
+
+<p><strong>Credits:</strong> {{ course?.credits }}</p>
+
+<p><strong>Grade Status:</strong> {{ course?.gradeStatus }}</p>
+
+<br>
+
+<button
+  type="button"
+  (click)="updateCourse()">
+  Update Course
+</button>
+
+&nbsp;
+
+<button
+  type="button"
+  (click)="deleteCourse()">
+  Delete Course
+</button>
