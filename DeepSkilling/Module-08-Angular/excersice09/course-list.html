@@ -1,0 +1,22 @@
+<div style="margin-bottom:15px;">
+
+  <input
+    type="text"
+    [(ngModel)]="searchTerm"
+    placeholder="Search courses">
+
+  <button (click)="search()">
+    Search
+  </button>
+
+</div>
+
+<app-course-card
+  *ngFor="let course of courses$ | async; trackBy: trackByCourseId"
+  [course]="course"
+  (enrollRequested)="onEnroll($event)">
+</app-course-card>
+
+<p *ngIf="selectedCourseId">
+  Selected course ID: {{ selectedCourseId }}
+</p>
